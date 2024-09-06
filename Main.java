@@ -137,7 +137,7 @@ class BikeRentalSystem {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("=====Bike Rental System=====");
+            System.out.println("=*=*=*=*=Bike Rental System=*=*=*=*=");
             System.out.println("1. Rent a Bike");
             System.out.println("2. Return a Bike");
             System.out.println("3. Exit");
@@ -147,7 +147,7 @@ class BikeRentalSystem {
             scanner.nextLine(); // Consume newline
 
             if (choice == 1) {
-                System.out.println("\n== Rent a Bike ==\n");
+                System.out.println("\n=*= Rent a Bike =*=\n");
                 System.out.print("Enter your name: ");
                 String customerName = scanner.nextLine();
 
@@ -178,7 +178,7 @@ class BikeRentalSystem {
 
                 if (selectedBike != null) {
                     double totalPrice = selectedBike.calculatePrice(rentalDays);
-                    System.out.println("\n== Rental Information ==\n");
+                    System.out.println("\n=*= Rental Information =*=\n");
                     System.out.println("Customer ID: " + newCustomer.getCustomerId());
                     System.out.println("Customer Name: " + newCustomer.getName());
                     System.out.println("Bike: " + selectedBike.getBrand() + " " + selectedBike.getModel());
@@ -198,7 +198,7 @@ class BikeRentalSystem {
                     System.out.println("\nInvalid Bike selection or Bike not available for rent.");
                 }
             } else if (choice == 2) {
-                System.out.println("\n== Return a Bike ==\n");
+                System.out.println("\n=*= Return a Bike =*=\n");
                 System.out.print("Enter the Bike ID you want to return: ");
                 String BikeId = scanner.nextLine();
 
